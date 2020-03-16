@@ -18,6 +18,10 @@ class UsersController < ApplicationController
       render :new
     end
   end
+  
+  def edit
+    @user = user.find(params[:id])
+  end  
 
   private
 
